@@ -1,0 +1,28 @@
+{
+  "name": "titancoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "build-dev": "webpack -d --mode development",
+    "build-prod": "webpack -p --mode production"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "typescript": "^3.9.7",
+    "ts-loader": "^8.0.2",
+    "css-loader": "^4.2.1",
+    "style-loader": "^1.2.1",
+    "html-webpack-plugin": "^4.3.0",
+    "sass-loader": "^9.0.3",
+    "node-sass": "^4.14.1",
+    "file-loader": "^6.0.0",
+    "webpack-bundle-analyzer": "^3.8.0"
+  }
+}
