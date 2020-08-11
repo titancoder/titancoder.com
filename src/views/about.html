@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= require('html-loader!./partials/header.html') %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <%= require('html-loader!./partials/navigation.html') %> <%=
+      require('html-loader!./partials/quotes.html') %> <%=
+      require('html-loader!./partials/footer.html') %>
+    </div>
+  </body>
+</html>
