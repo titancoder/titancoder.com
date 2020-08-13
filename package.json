@@ -12,7 +12,8 @@
     "build-prod": "webpack -p --mode production"
   },
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "notiflix": "^2.4.0"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.1",

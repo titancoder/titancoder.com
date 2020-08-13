@@ -29,6 +29,7 @@ const config = {
           publicPath: "images",
           emitFile: true,
           esModule: false,
+          name: "[name].[ext]",
         },
       },
     ],
@@ -52,11 +53,6 @@ const config = {
       filename: "projects.html",
       title: "Projects",
       template: "./src/views/projects.html",
-    }),
-    new HtmlWebpackPlugin({
-      filename: "tutorials.html",
-      title: "Tutorials",
-      template: "./src/views/tutorials.html",
     }),
     new HtmlWebpackPlugin({
       filename: "contact.html",

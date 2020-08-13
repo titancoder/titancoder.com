@@ -1,7 +1,14 @@
 import * as dotenv from "dotenv";
 import * as path from "path";
-dotenv.config({ path: path.resolve("/.env") });
+dotenv.config();
+require("./images/favicon.png");
+//@ts-ignore
+import { Loading } from "notiflix";
 import "../src/styles.scss";
+
+Loading.Init({
+  svgColor: "#8A2BE2",
+});
 
 $("#nav_menu").hide();
 $("#toggle_menu").click(function () {
@@ -32,17 +39,27 @@ $("#contact-form").on("submit", async (e) => {
   const name = $('[name="name"]').val();
   const email = $('[name="email"]').val();
   const message = $('[name="message"]').val();
-  fetch(process.env.CONTACT_API!, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "X-Api-Key": process.env.API_KEY!,
-    },
-    body: JSON.stringify({ name, email, message }),
-  })
+
+  Loading.Arrows("Sending...");
+  fetch(
+    "https://ha6jmvmwk2.execute-api.ap-south-1.amazonaws.com/live/contact",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Api-Key": "x4uSeTeYAw3VStG6EvYXi18p6JkCTv0U8eW9nPW7",
+      },
+      body: JSON.stringify({ name, email, message }),
+    }
+  )
     .then((response) => response.json())
     .then((data) => {
-      $("#contact-form").trigger("reset");
+      Loading.Remove();
+      $("#contact-form")
+        .trigger("reset")
+        .hide(0, function () {
+          $("#submit-message").removeClass("hide");
+        });
     })
     .catch((error) => {
       console.error("Error:", error);

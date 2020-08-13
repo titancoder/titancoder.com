@@ -20,6 +20,16 @@ body {
   position: relative;
 }
 
+.button {
+  background-color: $primary;
+  color: $secondary;
+
+  &:hover {
+    background-color: darken($color: $primary, $amount: 10);
+    color: $secondary;
+  }
+}
+
 #quotes {
   position: absolute;
   display: inline-block;
@@ -28,7 +38,7 @@ body {
   color: $secondary;
   width: 40%;
   text-align: left;
-  font-size: 1.3vw;
+  font-size: calc(8px + 0.5vw);
 }
 
 #web__developer {
@@ -315,5 +325,15 @@ li {
 
   .desc__container {
     border-radius: 0px 20px 20px 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  #quotes {
+    top: 4%;
+  }
+
+  #web__developer {
+    top: 4%;
   }
 }
