@@ -121,7 +121,7 @@ a {
     cursor: pointer;
     transition: ease-in 100ms;
   }
-  &:hover {
+  img:hover {
     transform: scale(0.8);
     transition: ease-in 100ms;
   }
@@ -147,9 +147,12 @@ a {
   right: 0;
   top: 0;
   font-size: 1rem;
-  background-color: #2fc4b2;
   border-top-right-radius: 20px;
   color: white;
+}
+
+.advanced {
+  background-color: #2fc4b2;
 }
 .basic {
   background-color: #3b6978;

@@ -48,7 +48,7 @@
     "desc": "As Containerization technology is gaining pace rapidly, having the expertise of software platform like <span > Docker</span> is always an advantage because it enables developers to easily pack, ship, and run any application as a lightweight, portable, self-sufficient container, which can run virtually anywhere."
   },
   {
-    "logo": "aws",
+    "logo": "aws-prime",
     "title": "Cloud",
     "level": "Basic",
     "desc": "In the era of cloud computing, it is must to have knowledge of cloud services. As for AWS, <span > EC2</span> for virtual computers, <span > S3</span> for scalable storage, <span> API Gateway</span> for creating RESTful API, <span > Lambda</span> for serverless computing are some of the major technologies on this set and more are being continuosly added with time."
