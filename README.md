@@ -1,4 +1,4 @@
-# titancoder
+# titancoder.com
 
 ## Building and running on localhost
 
@@ -18,10 +18,4 @@ To create a development build:
 
 ```sh
 npm run build-dev
-```
-
-## Running
-
-```sh
-node dist/bundle.js
 ```

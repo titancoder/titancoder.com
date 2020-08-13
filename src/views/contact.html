@@ -7,9 +7,45 @@
 
   <body>
     <div class="wrapper">
+      <img src="../images/nodejs.svg" alt="" />
       <%= require('html-loader!./partials/navigation.html') %> <%=
-      require('html-loader!./partials/quotes.html') %> <%=
-      require('html-loader!./partials/footer.html') %>
+      require('html-loader!./partials/quotes.html') %>
+      <div class="w-50 mx-auto" style="min-width: 330px;">
+        <form action="" method="POST" id="contact-form">
+          <div class="row">
+            <div class="col-12 mb-3">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Name"
+                name="name"
+              />
+            </div>
+            <div class="col-12 mb-3">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Email"
+                name="email"
+              />
+            </div>
+            <div class="col-12 mb-3">
+              <textarea
+                class="form-control"
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+      <%= require('html-loader!./partials/footer.html') %>
     </div>
   </body>
 </html>

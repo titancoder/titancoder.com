@@ -2,8 +2,8 @@ import * as dotenv from "dotenv";
 import * as path from "path";
 dotenv.config({ path: path.resolve("/.env") });
 import "../src/styles.scss";
-$("#nav_menu").hide();
 
+$("#nav_menu").hide();
 $("#toggle_menu").click(function () {
   $("#nav_menu").slideToggle();
 });

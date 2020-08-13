@@ -1,4 +1,5 @@
 const path = require("path");
+const skills = require("./skills-data.json");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -19,11 +20,15 @@ const config = {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
+
       {
         test: /\.(svg|png|jpe?g|gif)$/i,
         loader: "file-loader",
         options: {
           outputPath: "images",
+          publicPath: "images",
+          emitFile: true,
+          esModule: false,
         },
       },
     ],
@@ -36,31 +41,27 @@ const config = {
       filename: "index.html",
       title: "Titan Coder",
       template: "./src/views/index.html",
-      templateParameters: { test: "Titan Coder" },
+      templateParameters: { skills: skills },
     }),
     new HtmlWebpackPlugin({
       filename: "about.html",
       title: "About",
       template: "./src/views/about.html",
-      templateParameters: { test: "Titan Coder" },
     }),
     new HtmlWebpackPlugin({
       filename: "projects.html",
       title: "Projects",
       template: "./src/views/projects.html",
-      templateParameters: { test: "Titan Coder" },
     }),
     new HtmlWebpackPlugin({
       filename: "tutorials.html",
       title: "Tutorials",
       template: "./src/views/tutorials.html",
-      templateParameters: { test: "Titan Coder" },
     }),
     new HtmlWebpackPlugin({
       filename: "contact.html",
       title: "Contact",
       template: "./src/views/contact.html",
-      templateParameters: { test: "Titan Coder" },
     }),
     new MiniCssExtractPlugin(),
   ],

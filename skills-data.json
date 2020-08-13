@@ -1,0 +1,68 @@
+[
+  {
+    "logo": "javascript",
+    "title": "Language",
+    "level": "Advanced",
+    "desc": "<span > Javascript</span> is my primary language along with the implementaion of modern ES6+ features. To make the development process more robust, the superset of javascript and the second most loved language as per recent stackoverflow survey, <span > Typescript</span> is gradually being used in the existing as well as future projects. It is famous for it's optional static type checking feature."
+  },
+  {
+    "logo": "nodejs",
+    "title": "Backend",
+    "level": "Advanced",
+    "desc": "It is much more comfortable than having the same language for both client and server side. Hence, the choice for Javascript runtime environment <span > Node.js</span> for back-end. It helps in finetuning the existing Javascript skills while the strong community of Node.js provides super helpful packages and frameworks like <span > Express</span>, <span > EJS</span> templating engine etc."
+  },
+  {
+    "logo": "mongodb",
+    "title": "Database",
+    "level": "Advanced",
+    "desc": "Expertise in the NoSQL database <span > MongoDB</span> with an aim to master the MERN stack applications and to increase the productivity of database layer, an ODM like <span >Mongoose</span> is necessary. Working knowledge of SQL database<span > MySQL</span> and it's corresponding ORM <span > Sequelize</span> helps to keep the options diversified."
+  },
+  {
+    "logo": "html-5",
+    "title": "Frontend",
+    "level": "Advanced",
+    "desc": "<span > HTML</span> and <span > CSS</span> remains the integral part of web development and is definitely needed no matter if one is working on the client side or server side. CSS framework like <span > Bootstrap</span> speeds up the styling whereas Javascript library, <span > React</span> provides an extra edge on the client side of things as it is one of the building blocks of MERN stack applications. <span > Redux</span> remains the preferred state management library."
+  },
+  {
+    "logo": "git",
+    "title": "VCS",
+    "level": "Advanced",
+    "desc": "Being the most important part of any development workflow, <span > Git</span> is the undisputed king of version control so far. Git along with GitHub not only helps to keep track of all the changes made in the development process but also opens the door to open source projects, teaming up with other contributors for new projects as well as contributing to the existing projects."
+  },
+  {
+    "logo": "passport",
+    "title": "Auth",
+    "level": "Advanced",
+    "desc": "Authentication and Authorization are one of the major sections of any web application. Hashing passwords, verifying passwords, generating, validating and invalidating <span >JWT</span> tokens, maintaing the sessions, utilizing <span > Passport</span> and <span > OAuth2.0</span> authentication mechanisms are some of the use cases of this layer."
+  },
+  {
+    "logo": "redis",
+    "title": "Caching",
+    "level": "Basic",
+    "desc": "Caching not only results in faster load times but also decreases load on the server. Considering such tremendous performance improvements, in-memory database <span > Redis</span> serves as a notable skill in the caching layer. Apart from caching, Redis as a message-broker is an added benefit while making applications in the microservices architecture."
+  },
+  {
+    "logo": "docker",
+    "title": "Containers",
+    "level": "Basic",
+    "desc": "As Containerization technology is gaining pace rapidly, having the expertise of software platform like <span > Docker</span> is always an advantage because it enables developers to easily pack, ship, and run any application as a lightweight, portable, self-sufficient container, which can run virtually anywhere."
+  },
+  {
+    "logo": "aws",
+    "title": "Cloud",
+    "level": "Basic",
+    "desc": "In the era of cloud computing, it is must to have knowledge of cloud services. As for AWS, <span > EC2</span> for virtual computers, <span > S3</span> for scalable storage, <span> API Gateway</span> for creating RESTful API, <span > Lambda</span> for serverless computing are some of the major technologies on this set and more are being continuosly added with time."
+  },
+  {
+    "logo": "jest",
+    "title": "Testing",
+    "level": "Basic",
+    "desc": "Wrting automated tests for the application helps to find bugs in it which otherwise is a cumbersome process. Testing ensures stability of the application and existing codes can be modified with confidence. For this purpose <span >Jest</span> helps to perform unit tests as well as integration tests. Looking forward to implement TDD in projects."
+  },
+  {
+    "logo": "scrum",
+    "title": "Agile",
+    "level": "Basic",
+    "desc": "Although yet to gain hands-on experience with the Agile methodology, but it does seem very interesting and an efficient way in the development process. Knowing the theory behind a particular agile framework like <span >Scrum</span> seems to be a good starting point for it's implementation whenever and wherever there is need."
+  }
+]

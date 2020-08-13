@@ -8,8 +8,29 @@
   <body>
     <div class="wrapper">
       <%= require('html-loader!./partials/navigation.html') %> <%=
-      require('html-loader!./partials/quotes.html') %> <%=
-      require('html-loader!./partials/footer.html') %>
+      require('html-loader!./partials/quotes.html') %> <%
+      skills.forEach((skill)=> { %>
+      <div class="skills__3 skills w-75 mx-auto" data-aos="fade-right">
+        <div class="row myauto skillset">
+          <div class="col-xl-3 col-12 d-flex logos__container m-0 p-2">
+            <div class="bolt skills_title text-center my-auto d-flex w-100">
+              <img src="<%= require(`../images/${skill.logo}.svg`) %>" alt="" />
+              <div class="my-auto ml-2">
+                <%= skill.title %>
+              </div>
+            </div>
+            <div class="level px-4 basic">
+              <%= skill.level %>
+            </div>
+          </div>
+          <div class="col-xl-9 desc__container d-flex">
+            <div class="desc p-2 my-auto">
+              <%= skill.desc %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <%});%> <%= require('html-loader!./partials/footer.html') %>
     </div>
   </body>
 </html>
