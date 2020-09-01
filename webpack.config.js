@@ -1,5 +1,7 @@
 const path = require("path");
 const skills = require("./skills-data.json");
+const projects = require("./projects.json");
+const about = require("./about.json");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -48,11 +50,13 @@ const config = {
       filename: "about.html",
       title: "About",
       template: "./src/views/about.html",
+      templateParameters: { about: about },
     }),
     new HtmlWebpackPlugin({
       filename: "projects.html",
       title: "Projects",
       template: "./src/views/projects.html",
+      templateParameters: { projects: projects },
     }),
     new HtmlWebpackPlugin({
       filename: "contact.html",

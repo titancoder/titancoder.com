@@ -55,8 +55,8 @@ body {
     blinkTextCursor 300ms steps(19) infinite;
   overflow: hidden;
   white-space: nowrap;
-  width: 31vw;
-  margin-left: 50%;
+  width: 39vw;
+  margin-left: 45%;
 }
 
 @keyframes mytest {
@@ -66,7 +66,7 @@ body {
   }
   100% {
     opacity: 100;
-    width: 31vw;
+    width: 39vw;
   }
 }
 

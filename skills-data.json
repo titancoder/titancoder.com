@@ -21,7 +21,7 @@
     "logo": "html-5",
     "title": "Frontend",
     "level": "Advanced",
-    "desc": "<span > HTML</span> and <span > CSS</span> remains the integral part of web development and is definitely needed no matter if one is working on the client side or server side. CSS framework like <span > Bootstrap</span> speeds up the styling whereas Javascript library, <span > React</span> provides an extra edge on the client side of things as it is one of the building blocks of MERN stack applications. <span > Redux</span> remains the preferred state management library."
+    "desc": "<span > HTML</span> and <span > CSS</span> remains the integral part of web development and is definitely needed no matter if one is working on the client side or server side. CSS framework like <span > Bootstrap</span> speeds up the styling whereas working knowledge of Javascript library, <span > React</span> provides an extra edge on the client side of things as it is one of the building blocks of MERN stack applications."
   },
   {
     "logo": "git",

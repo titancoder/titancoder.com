@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Pizza Shop",
+    "type": "Personal Project",
+    "domain": "E-commerce Domain",
+    "status": "80% Complete",
+    "viewlive": "#",
+    "github": "#"
+  },
+  {
+    "title": "Daily NSE 500 Pivots",
+    "type": "Personal Project",
+    "domain": "Finance Domain",
+    "status": "70% Complete",
+    "viewlive": "#",
+    "github": "#"
+  },
+  {
+    "title": "Online Quiz League",
+    "type": "Freelance Project",
+    "domain": "Education",
+    "status": "10% Complete",
+    "viewlive": "#",
+    "github": "#"
+  }
+]
